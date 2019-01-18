@@ -5,7 +5,7 @@ module.exports = (api, projectOptions) => {
     Object.assign(optionsForThisPlugin, projectOptions.pluginOptions.karma)
   }
 
-  api.registerCommand('test:unit',
+  api.registerCommand('test:unitKarma',
     {
       'description': 'run unit tests with karma-webpack',
       'usage': 'vue-cli-service test',
@@ -68,5 +68,5 @@ module.exports = (api, projectOptions) => {
 }
 
 module.exports.defaultModes = {
-  'test:unit': 'test'
+  'test:unitKarma': 'test'
 }

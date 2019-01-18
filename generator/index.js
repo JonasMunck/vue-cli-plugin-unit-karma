@@ -10,7 +10,7 @@ module.exports = api => {
   api.extendPackage({
     devDependencies,
     scripts: {
-      'test:unit': 'vue-cli-service test:unit'
+      'test:unitKarma': 'vue-cli-service test:unitKarma'
     }
   })
 
